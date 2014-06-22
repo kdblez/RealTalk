@@ -1,0 +1,154 @@
+* {
+margin: 0;
+}
+
+
+
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figcaption, figure, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html, body, div, span, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
+  min-height: 1px; }
+
+ul, li{
+	list-style-type: none;
+}
+
+a {
+  color: #726182; 
+   }
+
+a:visited {
+  color: #726182; }
+
+a:hover {
+  color:#b2a0c3;
+}
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+		
+body {
+	background: #fff;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	letter-spacing:0.03em;
+	line-height: 20px;
+	color:#636363;
+}
+
+h1{
+	font-family: din, sans-serif;
+	font-size:28px;
+	color:#877da4;
+	border-bottom:7px rgba(135, 125, 164, 0.4) solid;
+	display:inline;
+	line-height:31px;
+	z-index:999;
+
+}
+
+.container{
+  width:100%;
+  height:100%;
+}
+
+.plus{
+  background:url('img/plus.png') center no-repeat;
+  width:15px;
+  height:15px; 
+  display:inline-block;
+}
+
+textarea{
+  border:none;
+  top:100px;
+  color:#000;
+  left:0px;
+  height:60%;
+  background-color:#fff;
+  width:90%;
+  padding:15px;
+  font-size:25px;
+}
+
+
+/** TOPBAR **/
+
+
+#speech{
+  width:100%;
+  height:106px;
+  background:url('img/speechcorner.png') bottom right no-repeat;
+}
+
+#speech .grey{
+  background:#F4F4F4;
+  padding:50px 15px 15px 15px;
+  padding-top:50px;
+}
+
+h2.people{
+  font-family: "roboto", sans-serif;
+  font-weight:700;
+  font-size:15px;
+  line-height:20px;
+  letter-spacing:0.0075em;
+  color:#414141;
+  display:inline;
+  margin-right:15px;
+}
+
+h2.people.green{
+  border-bottom:3px #36E1AB solid;
+}
+
+h2.people.yellow{
+  border-bottom:3px #E5D31E solid;
+}
+
+#colour{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:15px;
+  background-color:#EA6E2C;
+}
