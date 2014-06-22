@@ -41,7 +41,7 @@ html, body, div, span, ul, ol, li, h1, h2, h3, h4, h5, h6, p {
   min-height: 1px; }
 
 ul, li{
-	list-style-type: none;
+  list-style-type: none;
 }
 
 a {
@@ -64,24 +64,24 @@ a:hover, a:active {
 html, body {
   height: 100%;
   width: 100%; }
-		
+    
 body {
-	background: #fff;
-	font-family: Roboto, sans-serif;
-	font-size: 12px;
-	letter-spacing:0.03em;
-	line-height: 20px;
-	color:#636363;
+  background: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  letter-spacing:0.03em;
+  line-height: 20px;
+  color:#636363;
 }
 
 h1{
-	font-family: din, sans-serif;
-	font-size:28px;
-	color:#877da4;
-	border-bottom:7px rgba(135, 125, 164, 0.4) solid;
-	display:inline;
-	line-height:31px;
-	z-index:999;
+  font-family: din, sans-serif;
+  font-size:28px;
+  color:#877da4;
+  border-bottom:7px rgba(135, 125, 164, 0.4) solid;
+  display:inline;
+  line-height:31px;
+  z-index:999;
 
 }
 
