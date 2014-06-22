@@ -6,21 +6,27 @@
     <title>Realtalk, tho</title>
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+  
   <script type="text/javascript">
-
-
+  
+  
   </script>
-
+  
   </head>
   <body>
 
     <div class="container">
       <div id="speech">
         <div class="grey">
+<<<<<<< HEAD
+          <h2 class="people green">Angelina</h2>
+          <h2 class="people yellow">Kevin</h2>
+          <div class="plus" id="addContactButton"></div>
+=======
           <a class="conv" href="#"><b>&#12296;</b> &nbsp; past conversations</a>
           <h2>Tap to add</h2>
-          <div class="plus" id="addContactButton"></div>
+          <a class="plus" href="addtoconvo.html"></a>
+>>>>>>> 9960f5ff362e2d9f3146918ed52ce600db783f3f
         </div>
       </div>
 
@@ -40,8 +46,8 @@
 		{
 			contacts.showContactPicker();
 		});
-
-
+		
+		
     });
     </script>
 
