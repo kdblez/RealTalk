@@ -1,0 +1,51 @@
+<!doctype html> 
+<html lang="en">
+	<head>
+
+	</head>
+	<body> 
+		<div id="divMsg">
+
+
+		</div> 
+		<div class="divUser">
+			<br />
+			<ul id="userList">
+				
+			</ul>
+		</div>
+		<form id="formUser">
+			<input type="text" id="txtBox"/>
+		</form>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+		
+		<script>
+		var sockIO = io(); 
+				
+				// vars
+
+				sockIO.emit('addUser', "User");
+
+				// Socket Events
+				sockIO.on('add User', function() {
+					// add data to this chat 
+					$('#userList').append("User");
+				});
+				
+				sockIO.on('incoming msg', function(msg){
+					$('#divMsg').html($('#txtBox').val());
+				});
+
+				// DOM Events
+				$('#txtBox').keypress(function(e){
+					console.log("yeah");
+					sockIO.emit("incoming msg", $("#txtBox").val());
+				});
+				
+
+		</script>
+
+	</body> 
+</html>
