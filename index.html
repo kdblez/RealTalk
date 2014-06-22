@@ -6,43 +6,54 @@
     <title>Realtalk, tho</title>
     <link rel="stylesheet" href="css/style.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript">
+
+
+  </script>
+
   </head>
   <body>
 
     <div class="hello"></div>
 
     <div class="container">
-
       <div id="speech">
         <div class="grey">
           <a class="conv" href="#"><b>&#12296;</b> &nbsp; past conversations</a>
           <h2>Tap to add</h2>
-          <a class="plus" href="addtoconvo.html"></a>
+          <div class="plus" id="addContactButton"></div>
         </div>
       </div>
 
       <div id="colour">
       </div>
-
-
-        <textarea></textarea>
-
+        <textarea id="text"></textarea>
     </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/fastclick.js"></script>
+	<script src="js/realtalk.js"></script>
 
     <script>
-    
-    $(function() {
-        FastClick.attach(document.body);
-    });
+   $(document).ready(function() {        
+   
+		FastClick.attach(document.body);
+		$("#addContactButton").click(function()
+		{
+			contacts.showContactPicker();
+		});
 
-    $(document).ready(function() {
-      setTimeout(function() {
+		setTimeout(function() {
           $(".hello").fadeOut(1500);
       },6000);
+
+
     });
+
+    
+      
+
     </script>
 
   </body>
