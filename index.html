@@ -9,6 +9,8 @@
   </head>
   <body>
 
+    <div class="hello"></div>
+
     <div class="container">
 
       <div id="speech">
@@ -31,8 +33,15 @@
     <script src="js/fastclick.js"></script>
 
     <script>
+    
     $(function() {
         FastClick.attach(document.body);
+    });
+
+    $(document).ready(function() {
+      setTimeout(function() {
+          $(".hello").fadeOut(1500);
+      },6000);
     });
     </script>
 
