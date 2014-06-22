@@ -74,17 +74,6 @@ body {
   color:#636363;
 }
 
-h1{
-  font-family: din, sans-serif;
-  font-size:28px;
-  color:#877da4;
-  border-bottom:7px rgba(135, 125, 164, 0.4) solid;
-  display:inline;
-  line-height:31px;
-  z-index:999;
-
-}
-
 .container{
   width:100%;
   height:100%;
@@ -122,6 +111,10 @@ textarea:focus{
   width:100%;
   height:106px;
   background:url('../img/speechcorner.png') bottom right no-repeat;
+  position:absolute; 
+  top:0px;
+  z-index:999;
+  left:0px;
 }
 
 #speech .grey{
@@ -130,7 +123,7 @@ textarea:focus{
   padding-top:50px;
 }
 
-h2.people{
+h2{
   font-family: "roboto", sans-serif;
   font-weight:700;
   font-size:15px;
@@ -141,11 +134,11 @@ h2.people{
   margin-right:15px;
 }
 
-h2.people.green{
+h2.green{
   border-bottom:3px #36E1AB solid;
 }
 
-h2.people.yellow{
+h2.yellow{
   border-bottom:3px #E5D31E solid;
 }
 
@@ -156,4 +149,51 @@ h2.people.yellow{
   width:100%;
   height:15px;
   background-color:#EA6E2C;
+  z-index:9999;
 }
+
+/*** ADD TO CONVERSATION ***/
+
+#add{
+  position:absolute;
+  top:80px;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  overflow:auto;
+  background-color:#D5D5D5;
+  color:#fff;
+}
+
+  #add .top{
+    line-height:40px;
+    margin:0px 10px;
+    margin-top:10px;
+    font-size:13px;
+    padding-left:60px;
+    border-bottom:1px #979797 solid;
+  }
+
+  #add li a:link, #add li a:visited, #add li a:hover{
+    line-height:40px;
+    color:#fff;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:700;
+    display:block;
+    margin:0px 10px;
+    padding:8px 5px 8px 5px;
+    border-bottom:1px #979797 solid;
+  }
+
+  #add li a:active{
+    background-color: #BEBEBE;
+  }
+
+  #add li a img{
+    border:3px solid #36E1AB;
+    height:40px;
+    width:40px;
+    vertical-align:middle;
+    margin-right:10px;
+  }
