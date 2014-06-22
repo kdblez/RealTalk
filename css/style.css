@@ -114,7 +114,7 @@ textarea:focus{
 
 #speech{
   width:100%;
-  height:105px;
+  height:110px;
   background:url('../img/speechcorner.png') bottom right no-repeat;
   position:absolute; 
   top:0px;
@@ -122,10 +122,44 @@ textarea:focus{
   left:0px;
 }
 
+#speech.past{
+  background:none;
+  height:80px;
+}
+
 #speech .grey{
   background:#F4F4F4;
-  padding:50px 15px 15px 15px;
-  padding-top:50px;
+  padding:23px 15px 15px 15px;
+}
+
+#speech.past .grey{
+  padding:10px 15px !important;
+  overflow:auto;
+}
+
+a:link.conv, a:visited.conv{
+  font-size:12px;
+  line-height:30px;
+  margin:0px;
+  color:#414141;
+  text-decoration:none;
+  letter-spacing:0em;
+  display:block;
+}
+
+a:hover.conv, a:active.conv{
+  color:#979797;
+}
+
+a.conv.right{
+  float:right;
+}
+
+a.conv b{
+  font-size:18px;
+  vertical-align:middle;
+  font-weight:900;
+  color:#979797;
 }
 
 h2{
@@ -149,6 +183,10 @@ h2.green{
 
 h2.yellow{
   border-bottom:3px #E5D31E solid;
+}
+
+h2.orange{
+  border-bottom:3px #EA6E2C solid;
 }
 
 
@@ -243,4 +281,40 @@ h2.yellow{
     width:40px;
     vertical-align:middle;
     margin-right:10px;
+  }
+
+  /*** PAST CONVERSATIONS ***/
+
+  #past{
+    position:absolute;
+    top:80px;
+    left:0px;
+    bottom:0px;
+    width:100%;
+    overflow:auto;
+  }
+
+  #past h1{
+    color:#000;
+    font-size:25px;
+    margin-bottom:15px;
+  }
+
+  #past .bubble{
+    width:100%;
+    height:110px;
+    margin-bottom:20px;
+  }
+
+  #past .bubble .corner{
+    display:block;
+    float:right;
+    z-index:999;
+    margin-top:-10px;
+  }
+
+  #past .bubble .txt{
+    border-bottom:1px #6e6e6e solid;
+    margin:0px 15px;
+    padding:10px;
   }
