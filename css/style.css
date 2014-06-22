@@ -91,7 +91,7 @@ h1{
 }
 
 .plus{
-  background:url('img/plus.png') center no-repeat;
+  background:url('../img/plus.png') center no-repeat;
   width:15px;
   height:15px; 
   display:inline-block;
@@ -116,7 +116,7 @@ textarea{
 #speech{
   width:100%;
   height:106px;
-  background:url('img/speechcorner.png') bottom right no-repeat;
+  background:url('../img/speechcorner.png') bottom right no-repeat;
 }
 
 #speech .grey{
